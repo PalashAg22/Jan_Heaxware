@@ -1,0 +1,10 @@
+package com.hexaware.test_core_spring;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages="com.hexaware.test_core_spring.*")
+public class AppConfig {
+
+}
