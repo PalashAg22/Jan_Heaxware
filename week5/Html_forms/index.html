@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <h3>Registration Form</h3>
+        <form class="form-group">
+            <div class="parent">
+                <label for="name">Full Name</label><br>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter full name">
+            </div>
+            <div class="parent">
+                <label for="Email">Email Address</label><br>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Enter email address">
+            </div>
+            <div class="parent">
+                <label for="num">Mobile Number</label><br>
+                <input type="tel" name="number" id="num" class="form-control" placeholder="Enter mobile number">
+            </div>
+            <div class="parent">
+                <label for="dob">Birth Date</label>
+                <input type="date" name="birth" id="dob" class="form-control" placeholder="mm-day-year">
+            </div>
+            <div class="radio">
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" id="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Prefer not to say</label>
+            </div>
+            <div class="address">
+                <label for="address">Address</label><br>
+                <input type="text" name="address" id="address" class="form-group" placeholder="Enter address"><br>
+                <input type="text" name="country" id="country" class="form-control" placeholder="Country">
+                <input type="number" name="zipcode" id="zip" class="form-control" placeholder="Enter postal code">
+            </div>
+            <div class="button">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

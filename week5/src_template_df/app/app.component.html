@@ -1,0 +1,39 @@
+
+<div class="alert alsert-success">Login Form</div>
+
+<form class="container col-md-4" #loginForm="ngForm">
+
+    <div>
+        <label for="uname">Username</label>
+        <input type="text" name="username" id="uname" required class="form-control" ngModel #uname="ngModel">
+        <span style="color:red" *ngIf="uname.touched && uname.invalid">Username is required</span>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required class="form-control" ngModel #pass="ngModel">
+        <span style="color:red" *ngIf="pass.touched && pass.invalid">Password is required</span>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="loginForm.invalid" 
+    (click)="getFormData(loginForm)" >Login</button>
+</form>
+<h2>{{mydata|json}}</h2>
+
+<hr>
+
+<form class="container col-md-4" #loginForm="ngForm">
+
+    <div class="form-group" >
+        <label for="name">Username</label>
+        <input type="text" #uname="ngModel" name="username" id="name" required  pattern="[A-Z][a-z]{3,10}" ngModel class="form-control">
+        <div *ngIf="uname.errors && (uname.invalid || uname.touched)">
+            <span class="text-danger"  *ngIf="uname.errors && uname.touched">Username is required</span>
+            <span class="text-danger"  *ngIf="uname.errors && (uname.invalid && uname.touched)">Enter the correct pattern</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="pwd">Password</label>
+        <input type="password" #pass="ngModel" name="pwd" id="pwd"  ngModel required class="form-control">
+    </div>
+    <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary" (click)="getFormData(loginForm.value)"> Submit</button>
+
+</form>     

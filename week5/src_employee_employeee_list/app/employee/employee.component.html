@@ -1,0 +1,12 @@
+<p>employee works!</p>
+
+
+Eid: {{eid}} <br>
+
+Ename: {{ename}} <br>
+
+Salary: {{salary}} <br>
+
+<ul >
+    <li (click)="onSelect(list)" *ngIf="isSelected(list)"   *ngFor="let list of employees" >{{list.id}} {{list.name}}</li>
+</ul>

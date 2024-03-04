@@ -1,0 +1,24 @@
+2024-02-21T10:05:15.799+05:30  INFO 23072 --- [main] c.h.s.r.EmployeeRestControllerTest       : Starting EmployeeRestControllerTest using Java 17.0.6 with PID 23072 (started by palas in C:\Users\palas\Desktop\Java FSD\springrest-jpa)
+2024-02-21T10:05:15.812+05:30  INFO 23072 --- [main] c.h.s.r.EmployeeRestControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T10:05:16.915+05:30  INFO 23072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-21T10:05:16.989+05:30  INFO 23072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2024-02-21T10:05:17.631+05:30  INFO 23072 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-21T10:05:17.754+05:30  INFO 23072 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.20.Final
+2024-02-21T10:05:17.759+05:30  INFO 23072 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-21T10:05:18.317+05:30  INFO 23072 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-21T10:05:18.364+05:30  INFO 23072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-21T10:05:18.905+05:30  INFO 23072 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@640a8f93
+2024-02-21T10:05:18.908+05:30  INFO 23072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-21T10:05:19.035+05:30  WARN 23072 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-02-21T10:05:20.149+05:30  INFO 23072 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-21T10:05:20.231+05:30  INFO 23072 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-21T10:05:20.682+05:30  INFO 23072 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-21T10:05:21.462+05:30  WARN 23072 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-21T10:05:22.806+05:30  INFO 23072 --- [main] c.h.s.r.EmployeeRestControllerTest       : Started EmployeeRestControllerTest in 7.366 seconds (process running for 8.782)
+2024-02-21T10:05:23.667+05:30  INFO 23072 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.hexaware.springrestjpa.service.IEmployeeServiceImpTest]: IEmployeeServiceImpTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-21T10:05:23.676+05:30  INFO 23072 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.hexaware.springrestjpa.SpringrestJpaApplication for test class com.hexaware.springrestjpa.service.IEmployeeServiceImpTest
+2024-02-21T10:05:23.882+05:30  INFO 23072 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.hexaware.springrestjpa.SpringrestJpaApplicationTests]: SpringrestJpaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-21T10:05:23.889+05:30  INFO 23072 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.hexaware.springrestjpa.SpringrestJpaApplication for test class com.hexaware.springrestjpa.SpringrestJpaApplicationTests
+2024-02-21T10:05:23.917+05:30  INFO 23072 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-21T10:05:23.920+05:30  INFO 23072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-21T10:05:23.929+05:30  INFO 23072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,37 @@
+
+
+<h1>Hello friends</h1>
+
+<form [formGroup]="registerForm" class="container col-md-4">
+
+    <div class="form-group" >
+        <label for="fname">First Name</label>
+        <input type="text" formControlName="firstName" required id= "fname" class="form-control" [ngClass]="{'is-invalid':submitted && f['firstName'].errors}">
+        <div *ngIf="submitted && f['firstName'].errors" class="invalid-feedback"></div>
+        <div style="color: red;" *ngIf="f['firstName'].errors?.['required'] && f['firstName'].touched">FirstName is required</div>
+    
+    </div>
+    <div class="form-group" >
+        <label for="lname">Last Name</label>
+        <input type="text" fomnControlName="lastName" required id="lname" class="form-control">
+        <div *ngIf="submitted && f['lastName'].errors" class="invalid-feedback"></div>
+        <div style="color: red;"  *ngIf="f['lastName'].errors?.['required'] && f['lastName'].touched">LastName is required</div>
+
+    </div>
+    <div class="form-group" >
+        <label for="email">email</label>
+        <input type="email" formControlName="email" required id="email" class="form-control">
+        <div style="color: red;"  *ngIf="f['email'].errors?.['required'] && f['email'].touched" && >Email is required</div>
+        <div  style="color: red;"  *ngIf="f['email'].errors?.['email']">Email must be a valid email address</div>    
+    </div>
+    <div class="form-group" >
+        <label for="pwd">password</label>
+        <input type="password" formControlName="password" required id="pwd" class="form-control">
+        <div *ngIf="submitted && f['password'].errors" class="invalid-feedback"></div>
+        <div style="color: red;"  *ngIf="f['password'].errors?.['required'] && f['password'].touched">Password is required</div>    
+    </div>
+
+    <button type="submit"     class="btn btn-primary" >Register</button>
+
+</form>
+{{registerForm.value|json}}

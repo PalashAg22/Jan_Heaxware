@@ -1,0 +1,15 @@
+
+<h1>Hello friends</h1>
+
+<button style="text-decoration: none; background-color:black" type="button"><a style="color: white;" routerLink="/home">Home</a></button> 
+
+<button type="submit"  routerLink="/contactus" [queryParams]="addressJson" >Call Us</button>
+
+<ul>
+
+    <li> <a routerLink="/aboutus/{{username}}" > About Us </a></li>
+
+</ul>
+
+<button type="submit" routerLink="/employee">Employee</button>
+<router-outlet></router-outlet>
